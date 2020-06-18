@@ -1,0 +1,10 @@
+{% extends 'system/base.html' %}
+
+
+{% block content %}
+<h1>This is Result page based on Random Data</h1>
+<div><a href="{% url 'choose' %}">Unique Prediction</a> | 
+<a href="{% url 'random' %}">Random Prediction</a></div>
+
+
+{% endblock content %}
