@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 pandas = "*"
 django-csvimport = "*"
+gunicorn = "==19.9.0"
 
 [requires]
 python_version = "3.8"
