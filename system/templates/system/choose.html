@@ -13,8 +13,8 @@
     <div class="form-col">
     <input type="radio" name="id1" value="user" required>
     <label>Based on Users</label><br>
-    <input type="radio" name="id1" value="Instrument" required>
-    <label>Based on Instruments</label><br>
+    <input type="radio" name="id1" value="song" required>
+    <label>Based on Songs</label><br>
     <input type="text" name="Id" required>
     <input type="submit" value="Predict">
     </div>
@@ -50,7 +50,6 @@
     </form>
     
     {% if flag.value == 'Random' %}
-    <h1>data goes here</h1>
     <table style="width:80%">
   <tr>
     <th>UserId</th>

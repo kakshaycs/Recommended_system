@@ -91,5 +91,5 @@ def Choose(request):
 def User(request):
 	return render(request,'system/user.html')
 
-def Instrument(request):
-	return render(request,'system/instrument.html')
+def Song(request):
+	return render(request,'system/song.html')
