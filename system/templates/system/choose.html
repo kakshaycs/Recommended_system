@@ -3,11 +3,11 @@
 
 {% block content %}
 
-<div class="card-body" style="height: 45rem;">
+<div class="card-body" style="min-height: 45rem;">
     <h2 class="card-title">This is Result page based on Unique Data</h2>
 <div class="container">
 <div class="row">
-	<div class="card col" style="height: 40rem;">
+	<div class="card col" style="min-height: 40rem;">
 	<div class="card-title m-4"><a href="{% url 'choose' %}"><h4>Unique Prediction</h4></a></div>
     <form action="." method="GET">
     <div class="form-col">
@@ -21,7 +21,7 @@
 	</form>
  	
 	{% if flag.value == 'Unique' %}
-    <h1>data goes here</h1>
+    <!-- <h1>data goes here</h1> -->
     <table style="width:80%">
   <tr>
     <th>UserId</th>
@@ -41,7 +41,7 @@
 
 
 	</div> 
-	<div class="card col" style="height: 40rem;">
+	<div class="card col" style="min-height: 40rem;">
 	<div class="card-title m-4"><a href="{% url 'choose' %}"><h4>Random Prediction</h4></a></div>
     <form action="." method="GET">
     	<input type="radio" name="id1" value="random" required>
