@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import USER, SONG
+from .models import USER, MOVIE
 from random import sample
 from .Prediction import Prediction
 
@@ -20,18 +20,17 @@ def Choose(request):
 	}
 	print(target)
 	p = Prediction();
-
 	if(target!=None):
 		if(target=="random"):
 			print("GET Random data")
-			d = p.RandomUSERSONG()
+			d = p.RandomUSERMOVIE()
 			context = {
 				'Data' : d,
 				'flag':flag
 			}
 		elif(target=='user'):
 			ID = request.GET.get('Id');
-			d = p.predictSong(int(ID))
+			d = p.predictMovie(int(ID))
 			
 			context = {
 				'Data' : d,
@@ -60,6 +59,6 @@ def User(request):
 	p = Prediction();
 	return render(request,'system/user.html',{'data':p.user()})
 
-def Song(request):
+def Movie(request):
 	p = Prediction();
-	return render(request,'system/song.html',{'data':p.song()})
+	return render(request,'system/movie.html',{'data':p.movie()})

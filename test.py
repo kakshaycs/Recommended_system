@@ -14,7 +14,7 @@
 
 # print(getProcessData(f.readline()))
 
-# from system.models import SONG, USER
+# from system.models import MOVIE, USER
 # from dataPopulate import PopulateSong,PopulateUser
 
 # for i in range(69999,80000):
@@ -23,7 +23,10 @@
 # ...     u.save()
 
 
-from dataPopulate import PopulateSong,PopulateUser
+from dataPopulate import PopulateUser,PopulateMovie
 
 p = PopulateUser();
-print(p.getData(10))
+print(p.getData(1))
+print("\n\n\n")
+m = PopulateMovie();
+print(m.getData(1))

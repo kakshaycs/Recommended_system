@@ -14,7 +14,7 @@
     <input type="radio" name="id1" value="user" required>
     <label>Based on Users</label><br>
     <input type="radio" name="id1" value="song" required>
-    <label>Based on Songs</label><br>
+    <label>Based on Movies</label><br>
     <input type="text" name="Id" required>
     <input type="submit" value="Predict">
     </div>
@@ -25,13 +25,13 @@
     <table style="width:80%">
   <tr>
     <th>UserId</th>
-    <th>SongsId</th> 
+    <th>MovieId</th> 
     <th>Rating</th>
   </tr>
   {% for d in Data%}
   <tr>
     <td>{{d.user}}</td>
-    <td>{{d.song}}</td>
+    <td>{{d.movie}}</td>
     <td>{{d.rate}}</td>
   </tr>
   {% endfor %}
@@ -53,13 +53,13 @@
     <table style="width:80%">
   <tr>
     <th>UserId</th>
-    <th>SongsId</th> 
+    <th>MovieId</th> 
     <th>Rating</th>
   </tr>
   {% for d in Data%}
   <tr>
     <td>{{d.user}}</td>
-    <td>{{d.song}}</td>
+    <td>{{d.movie}}</td>
     <td>{{d.rate}}</td>
   </tr>
   {% endfor %}

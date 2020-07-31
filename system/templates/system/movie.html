@@ -1,0 +1,18 @@
+{% extends 'system/base.html' %}
+
+
+{% block content %}
+  <div class="card-body">
+  	<div class="container-fluid card" style="height: 45rem; width: 45rem">
+  			<h2 class="card-title m-4">This is Movies Page, which shows random 20 Movie_ID </h2>
+
+  			{% for d in data%}
+			  <tr>
+			    <td>{{d}}</td><br>
+			  </tr>
+			 {% endfor %}
+
+  	</div>
+  </div>
+
+{% endblock content %}
